@@ -35,7 +35,7 @@ jobs:
       # Build the iOS App
       - name: Build the iOS Simulator app
         run: |
-          PROJECT_PATH="/Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction/TestGithubAction.xcodeproj"
+          PROJECT_PATH="/Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction/TestGithubAction.xcworkspace"
           SCHEME="TestGithubAction"
           CONFIGURATION="Debug"  # or "Release" "Debug"
           
@@ -43,7 +43,7 @@ jobs:
           echo "Building the project..."
           
           arch -x86_64 xcodebuild \
-            -project "$PROJECT_PATH" \
+            -workspace "$PROJECT_PATH" \
             -scheme "$SCHEME" \
             -sdk iphonesimulator \
             -configuration $CONFIGURATION \
