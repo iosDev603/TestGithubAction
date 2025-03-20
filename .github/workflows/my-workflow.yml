@@ -60,11 +60,11 @@ jobs:
           ls -R ~/Library/Developer/Xcode/DerivedData/*
           
            cd /Users/runner/Library/Developer/Xcode/DerivedData/TestGithubAction-dmkqqwxmpoxlhbhjhklbtavmjqac/Build/Products/Debug-iphonesimulator/
-           zip -r ${{ github.workspace }}/zip/TestGithubAction.zip TestGithubAction.app
+           zip -r ${{ github.workspace }}/file/TestGithubAction.zip TestGithubAction.app
           
       # Upload the .zip file
-#      - name: Upload .zip file
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: KDS-Development
-#          path: ${{ github.workspace }}/zip/KDS-Development.zip
+      - name: Upload .zip file
+        uses: actions/upload-artifact@v4
+        with:
+          name: KDS-Development
+          path: ${{ github.workspace }}/file/TestGithubAction.zip
