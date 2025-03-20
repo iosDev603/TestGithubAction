@@ -32,7 +32,7 @@ jobs:
           PROJECT_PATH="/Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction.xcodeproj"
           SCHEME="TestGithubAction"
           CONFIGURATION="Debug"  # or "Release" "Debug"
-                    
+          echo $GITHUB_WORKSPACE
           # Step 2: Build the project
           echo "Building the project..."
           
