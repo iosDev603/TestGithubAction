@@ -29,11 +29,9 @@ jobs:
       # Build the iOS App
       - name: Build the iOS Simulator app
         run: |
-          PROJECT_PATH="/Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction.xcodeproj"
+          PROJECT_PATH="/Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction/TestGithubAction.xcodeproj"
           SCHEME="TestGithubAction"
           CONFIGURATION="Debug"  # or "Release" "Debug"
-          
-          ls -R $GITHUB_WORKSPACE/*
           
           # Step 2: Build the project
           echo "Building the project..."
