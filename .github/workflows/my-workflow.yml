@@ -37,7 +37,8 @@ jobs:
         run: |
           cd /Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction/
           pod deintegrate
-          pod update
+          pod cache clean --all
+          pod install --repo-update
 
       # Build the iOS App
       - name: Build the iOS Simulator app
