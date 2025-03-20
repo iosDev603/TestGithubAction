@@ -119,12 +119,7 @@ PODS:
     - PromisesObjC (= 2.4.0)
   - ReachabilitySwift (5.2.4)
   - SkeletonView (1.30.4)
-  - SMCloudServices (1.5.1):
-    - StarIO_Extension
   - Split (3.1.1)
-  - StarIO (2.12.0)
-  - StarIO_Extension (1.18.0):
-    - StarIO
   - SwiftLint (0.58.2)
 
 DEPENDENCIES:
@@ -136,7 +131,6 @@ DEPENDENCIES:
   - IQKeyboardManager
   - ReachabilitySwift
   - SkeletonView
-  - SMCloudServices
   - Split
   - SwiftLint
 
@@ -164,10 +158,7 @@ SPEC REPOS:
     - PromisesSwift
     - ReachabilitySwift
     - SkeletonView
-    - SMCloudServices
     - Split
-    - StarIO
-    - StarIO_Extension
     - SwiftLint
 
 SPEC CHECKSUMS:
@@ -193,12 +184,9 @@ SPEC CHECKSUMS:
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
   SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
-  SMCloudServices: d31c07b85289d68db7d0ada0b91fb5a1c078e694
   Split: 4ed3b088e46890ac4b8110e4ae7c194ba4a59d6f
-  StarIO: 27f23e20217cc13309e3a43b8741d695b4e973a3
-  StarIO_Extension: 730a449b32b5245204dbff127164faa6ec5217a6
   SwiftLint: 365bcd9ffc83d0deb874e833556d82549919d6cd
 
-PODFILE CHECKSUM: e5624b4f779031d38bf484bf117d854535ca5b0b
+PODFILE CHECKSUM: 4f9c44bfe072af5f6b560757bafb9e3b28213829
 
 COCOAPODS: 1.16.2

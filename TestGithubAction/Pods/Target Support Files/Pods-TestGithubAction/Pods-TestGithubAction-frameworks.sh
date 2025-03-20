@@ -197,8 +197,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/BugfenderSDK/BugfenderSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Dynatrace/xcframework/Dynatrace.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/StarIO/StarIO.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/StarIO_Extension/StarIO_Extension.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
@@ -222,8 +220,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/BugfenderSDK/BugfenderSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Dynatrace/xcframework/Dynatrace.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/StarIO/StarIO.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/StarIO_Extension/StarIO_Extension.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

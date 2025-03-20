@@ -20,7 +20,7 @@ def commonframeworks
   
   pod 'AlamofireObjectMapper'
   pod 'ReachabilitySwift'
-  pod 'SMCloudServices'
+#  pod 'SMCloudServices'
   pod 'IQKeyboardManager'
   pod 'SwiftLint'
   pod 'SkeletonView'

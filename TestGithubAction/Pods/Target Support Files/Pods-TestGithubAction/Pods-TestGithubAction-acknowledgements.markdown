@@ -2442,10 +2442,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## SMCloudServices
-
-https://www.starmicronics.com/support/Mannualfolder/SoftwareLicenseAgreement_web.pdf
-
 ## SkeletonView
 
 The MIT License (MIT)
@@ -2488,14 +2484,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-
-## StarIO
-
-https://www.starmicronics.com/support/Mannualfolder/SoftwareLicenseAgreement_web.pdf
-
-## StarIO_Extension
-
-https://www.starmicronics.com/support/Mannualfolder/SoftwareLicenseAgreement_web.pdf
 
 ## SwiftLint
 
