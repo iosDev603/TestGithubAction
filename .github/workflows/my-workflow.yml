@@ -31,7 +31,14 @@ jobs:
           else
             echo "Rosetta 2 already installed."
           fi
-          
+
+      # Install dependencies (if any)
+      - name: Install dependencies
+        run: |
+          cd /Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction/
+          pod deintegrate
+          pod install
+
       # Build the iOS App
       - name: Build the iOS Simulator app
         run: |
