@@ -33,8 +33,7 @@ jobs:
           SCHEME="TestGithubAction"
           CONFIGURATION="Debug"  # or "Release" "Debug"
           
-          echo $GITHUB_WORKSPACE/TestGithubAction/
-          ls
+          ls -R $GITHUB_WORKSPACE/*
           
           # Step 2: Build the project
           echo "Building the project..."
