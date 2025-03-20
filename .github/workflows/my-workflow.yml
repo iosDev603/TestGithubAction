@@ -1,1 +1,66 @@
+name: iOS Build and Upload .app as .zip
 
+on:
+  push:
+    branches:
+      - main  # This will trigger the action when merging to the main branch
+
+jobs:
+  build:
+    runs-on: macos-latest  # Choose macOS as the runner for iOS build
+
+    steps:
+      # Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Clean Derived Data
+        run: rm -rf ~/Library/Developer/Xcode/DerivedData/*
+
+      - name: Install Rosetta 2 if not installed
+        run: |
+          if ! /usr/bin/pgrep -q oahd; then
+            echo "Rosetta 2 not found. Installing..."
+            sudo softwareupdate --install-rosetta --agree-to-license
+          else
+            echo "Rosetta 2 already installed."
+          fi
+          
+      # Build the iOS App
+      - name: Build the iOS Simulator app
+        run: |
+          PROJECT_PATH="/Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction.xcodeproj"
+          SCHEME="TestGithubAction"
+          CONFIGURATION="Debug"  # or "Release" "Debug"
+                    
+          # Step 2: Build the project
+          echo "Building the project..."
+          
+          arch -x86_64 xcodebuild \
+            -workspace "$PROJECT_PATH" \
+            -scheme "$SCHEME" \
+            -sdk iphonesimulator \
+            -configuration $CONFIGURATION \
+            -destination 'platform=iOS Simulator,OS=17.5,name=iPad (10th generation)' \
+            -arch x86_64 \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_ALLOWED=NO clean build | tee result.log
+
+            
+      # List files to check the build output
+      - name: List files in build directory
+        run: |
+          echo "Listing contents of build directory:"
+          ls -R ~/Library/Developer/Xcode/DerivedData/*
+#      - name: .app and create .zip
+#        run: |
+#          cd /Users/runner/Library/Developer/Xcode/DerivedData/KDS-ggzwfwcawnewznbnbtokcixqrqgo/Build/Products/Debug-iphoneos/
+#          zip -r ${{ github.workspace }}/zip/KDS-Development.zip KDS-Development.app
+          
+      # Upload the .zip file
+#      - name: Upload .zip file
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: KDS-Development
+#          path: ${{ github.workspace }}/zip/KDS-Development.zip
