@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest  # Choose macOS as the runner for iOS build
+    runs-on: macos-15  # Choose macOS as the runner for iOS build
 
     steps:
       # Checkout the code
