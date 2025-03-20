@@ -47,8 +47,7 @@ jobs:
             -scheme "$SCHEME" \
             -sdk iphonesimulator \
             -configuration $CONFIGURATION \
-            -destination 'platform=iOS Simulator,OS=17.5,name=iPad (10th generation)' \
-            -arch x86_64 \
+            -destination 'platform=iOS Simulator,OS=latest,name=iPad (10th generation)' \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_ALLOWED=NO clean build | tee result.log
