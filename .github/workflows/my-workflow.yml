@@ -37,7 +37,7 @@ jobs:
           echo "Building the project..."
           
           arch -x86_64 xcodebuild \
-            -workspace "$PROJECT_PATH" \
+            -project "$PROJECT_PATH" \
             -scheme "$SCHEME" \
             -sdk iphonesimulator \
             -configuration $CONFIGURATION \
