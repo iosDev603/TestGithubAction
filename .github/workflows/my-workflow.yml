@@ -58,8 +58,8 @@ jobs:
         run: |
           echo "Listing contents of build directory:"
           ls -R ~/Library/Developer/Xcode/DerivedData/*
-          
-           cd /Users/runner/Library/Developer/Xcode/DerivedData/TestGithubAction-dmkqqwxmpoxlhbhjhklbtavmjqac/Build/Products/Debug-iphonesimulator/
+          cd /Users/runner/Library/Developer/Xcode/DerivedData/TestGithubAction-edbsdfkjvqekcaguwsuoghnlgyic/Build/Products/Debug-iphonesimulator/
+           # cd /Users/runner/Library/Developer/Xcode/DerivedData/TestGithubAction-dmkqqwxmpoxlhbhjhklbtavmjqac/Build/Products/Debug-iphonesimulator/
            zip -r ${{ github.workspace }}/file/TestGithubAction.zip TestGithubAction.app
           
       # Upload the .zip file
