@@ -58,10 +58,9 @@ jobs:
         run: |
           echo "Listing contents of build directory:"
           ls -R ~/Library/Developer/Xcode/DerivedData/*
-#      - name: .app and create .zip
-#        run: |
-#          cd /Users/runner/Library/Developer/Xcode/DerivedData/KDS-ggzwfwcawnewznbnbtokcixqrqgo/Build/Products/Debug-iphoneos/
-#          zip -r ${{ github.workspace }}/zip/KDS-Development.zip KDS-Development.app
+          
+           cd /Users/runner/Library/Developer/Xcode/DerivedData/TestGithubAction-dmkqqwxmpoxlhbhjhklbtavmjqac/Build/Products/Debug-iphonesimulator/
+           zip -r ${{ github.workspace }}/zip/TestGithubAction.zip TestGithubAction.app
           
       # Upload the .zip file
 #      - name: Upload .zip file
