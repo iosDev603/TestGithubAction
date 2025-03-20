@@ -37,7 +37,7 @@ jobs:
         run: |
           cd /Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction/
           pod deintegrate
-          pod install
+          pod update
 
       # Build the iOS App
       - name: Build the iOS Simulator app
@@ -49,7 +49,7 @@ jobs:
           # Step 2: Build the project
           echo "Building the project..."
           
-          arch -x86_64 xcodebuild \
+          xcodebuild \
             -workspace "$PROJECT_PATH" \
             -scheme "$SCHEME" \
             -sdk iphonesimulator \
