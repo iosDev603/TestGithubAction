@@ -13,6 +13,11 @@ jobs:
       # Checkout the code
       - name: Checkout code
         uses: actions/checkout@v2
+        
+      - name: Set up Xcode
+        uses: macos-actions/setup-xcode@v2
+        with:
+          xcode-version: 'latest'  # Ensure the latest version of Xcode is used
 
       - name: Clean Derived Data
         run: rm -rf ~/Library/Developer/Xcode/DerivedData/*
