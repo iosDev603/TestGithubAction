@@ -20,3 +20,5 @@ ${BUILT_PRODUCTS_DIR}/Split/Split.framework
 ${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/BugfenderSDK/BugfenderSDK.framework/BugfenderSDK
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/Dynatrace/xcframework/Dynatrace.framework/Dynatrace
+${PODS_XCFRAMEWORKS_BUILD_DIR}/StarIO/StarIO.framework/StarIO
+${PODS_XCFRAMEWORKS_BUILD_DIR}/StarIO_Extension/StarIO_Extension.framework/StarIO_Extension

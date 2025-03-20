@@ -98,6 +98,7 @@
 				8BBA1DB62D8C041F0035B2EA /* Frameworks */,
 				8BBA1DB72D8C041F0035B2EA /* Resources */,
 				49C7AFAB850F3AF9656F97BC /* [CP] Embed Pods Frameworks */,
+				60A6E887ED70D12D0650076E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,6 +172,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestGithubAction/Pods-TestGithubAction-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60A6E887ED70D12D0650076E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestGithubAction/Pods-TestGithubAction-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestGithubAction/Pods-TestGithubAction-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestGithubAction/Pods-TestGithubAction-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		91887D97EDBE22777C16EE55 /* [CP] Check Pods Manifest.lock */ = {
