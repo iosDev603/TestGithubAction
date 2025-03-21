@@ -36,10 +36,6 @@ jobs:
       - name: Install dependencies
         run: |
           cd /Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction/
-          pod deintegrate
-          pod cache clean --all
-          rm -rf Pods
-          rm -rf ~/Library/Developer/Xcode/DerivedData
           pod install --repo-update
 
       # Build the iOS App
