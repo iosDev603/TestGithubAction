@@ -113,6 +113,7 @@ PODS:
     - PromisesObjC (= 2.4.0)
   - SkeletonView (1.30.4)
   - Split (3.1.1)
+  - SwiftLint (0.58.2)
 
 DEPENDENCIES:
   - BugfenderSDK
@@ -121,6 +122,7 @@ DEPENDENCIES:
   - FirebaseCrashlytics
   - SkeletonView
   - Split
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
@@ -142,6 +144,7 @@ SPEC REPOS:
     - PromisesSwift
     - SkeletonView
     - Split
+    - SwiftLint
 
 SPEC CHECKSUMS:
   BugfenderSDK: 290a6c6163c2212c819e63c49d192c8625046602
@@ -162,7 +165,8 @@ SPEC CHECKSUMS:
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
   Split: 4ed3b088e46890ac4b8110e4ae7c194ba4a59d6f
+  SwiftLint: 365bcd9ffc83d0deb874e833556d82549919d6cd
 
-PODFILE CHECKSUM: 1923dc19bde68af88f2666d70768ccf04efe6ed2
+PODFILE CHECKSUM: d46b1678e039566cdf89059148748e2280f8489e
 
 COCOAPODS: 1.16.2
