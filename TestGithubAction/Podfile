@@ -26,7 +26,7 @@ def commonframeworks
 #  pod 'SkeletonView'
 #  pod 'BugfenderSDK'
 #  pod 'Split'
-#  pod 'FirebaseCrashlytics'
+  pod 'FirebaseCrashlytics'
   pod 'FirebaseAnalytics'
 #  pod 'Dynatrace'
 end
