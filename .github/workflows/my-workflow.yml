@@ -47,8 +47,8 @@ jobs:
           
           # Step 2: Build the project
           echo "Building the project..."
-          
-          arch -x86_64 xcodebuild \
+          export EXCLUDED_ARCHITECTURES=arm64
+          xcodebuild \
             -workspace "$PROJECT_PATH" \
             -scheme "$SCHEME" \
             -sdk iphonesimulator \
