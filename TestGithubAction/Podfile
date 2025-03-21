@@ -23,7 +23,7 @@ def commonframeworks
 #  pod 'SMCloudServices'
 #  pod 'IQKeyboardManager'
 #  pod 'SwiftLint'
-#  pod 'SkeletonView'
+  pod 'SkeletonView'
   pod 'BugfenderSDK'
   pod 'Split'
   pod 'FirebaseCrashlytics'
