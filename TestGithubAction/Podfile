@@ -24,7 +24,7 @@ def commonframeworks
 #  pod 'IQKeyboardManager'
 #  pod 'SwiftLint'
 #  pod 'SkeletonView'
-#  pod 'BugfenderSDK'
+  pod 'BugfenderSDK'
   pod 'Split'
   pod 'FirebaseCrashlytics'
   pod 'FirebaseAnalytics'

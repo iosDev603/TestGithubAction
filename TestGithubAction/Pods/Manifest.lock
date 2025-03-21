@@ -1,4 +1,5 @@
 PODS:
+  - BugfenderSDK (2.0.0)
   - FirebaseAnalytics (11.10.0):
     - FirebaseAnalytics/AdIdSupport (= 11.10.0)
     - FirebaseCore (~> 11.10.0)
@@ -110,12 +111,14 @@ PODS:
   - Split (3.1.1)
 
 DEPENDENCIES:
+  - BugfenderSDK
   - FirebaseAnalytics
   - FirebaseCrashlytics
   - Split
 
 SPEC REPOS:
   trunk:
+    - BugfenderSDK
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseCoreExtension
@@ -133,6 +136,7 @@ SPEC REPOS:
     - Split
 
 SPEC CHECKSUMS:
+  BugfenderSDK: 290a6c6163c2212c819e63c49d192c8625046602
   FirebaseAnalytics: 4e42333f02cf78ed93703a5c36f36dd518aebdef
   FirebaseCore: 8344daef5e2661eb004b177488d6f9f0f24251b7
   FirebaseCoreExtension: 6f357679327f3614e995dc7cf3f2d600bdc774ac
@@ -149,6 +153,6 @@ SPEC CHECKSUMS:
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   Split: 4ed3b088e46890ac4b8110e4ae7c194ba4a59d6f
 
-PODFILE CHECKSUM: 8a9b3c1f7b42aa049d9ebc25c26298e9758b6924
+PODFILE CHECKSUM: a16dda8218a2414d42788b0d9b0e11106f50ae6e
 
 COCOAPODS: 1.16.2
