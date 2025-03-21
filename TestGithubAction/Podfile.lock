@@ -1,4 +1,8 @@
 PODS:
+  - Alamofire (5.0.0-rc.2)
+  - AlamofireObjectMapper (6.2.0):
+    - Alamofire (= 5.0.0-rc.2)
+    - ObjectMapper (~> 3.5.1)
   - BugfenderSDK (2.0.0)
   - Dynatrace (8.309.2.1015):
     - Dynatrace/xcframework (= 8.309.2.1015)
@@ -109,6 +113,7 @@ PODS:
     - nanopb/encode (= 3.30910.0)
   - nanopb/decode (3.30910.0)
   - nanopb/encode (3.30910.0)
+  - ObjectMapper (3.5.3)
   - PromisesObjC (2.4.0)
   - PromisesSwift (2.4.0):
     - PromisesObjC (= 2.4.0)
@@ -117,6 +122,7 @@ PODS:
   - SwiftLint (0.58.2)
 
 DEPENDENCIES:
+  - AlamofireObjectMapper
   - BugfenderSDK
   - Dynatrace
   - FirebaseAnalytics
@@ -128,6 +134,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - AlamofireObjectMapper
     - BugfenderSDK
     - Dynatrace
     - FirebaseAnalytics
@@ -143,6 +151,7 @@ SPEC REPOS:
     - GoogleUtilities
     - IQKeyboardManager
     - nanopb
+    - ObjectMapper
     - PromisesObjC
     - PromisesSwift
     - SkeletonView
@@ -150,6 +159,8 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
   BugfenderSDK: 290a6c6163c2212c819e63c49d192c8625046602
   Dynatrace: 500c61e08b89f71ba7e368e593f4cbb9e09a88d7
   FirebaseAnalytics: 4e42333f02cf78ed93703a5c36f36dd518aebdef
@@ -165,12 +176,13 @@ SPEC CHECKSUMS:
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
   IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
   Split: 4ed3b088e46890ac4b8110e4ae7c194ba4a59d6f
   SwiftLint: 365bcd9ffc83d0deb874e833556d82549919d6cd
 
-PODFILE CHECKSUM: 3a02d92c3966c974e7801e161e0e299b37bbec11
+PODFILE CHECKSUM: a88647184f103b8b21627f53979efdd7edfa714d
 
 COCOAPODS: 1.16.2
