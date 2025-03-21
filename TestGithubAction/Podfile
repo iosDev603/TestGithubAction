@@ -19,7 +19,7 @@ post_install do |installer|
 def commonframeworks
   
   pod 'AlamofireObjectMapper'
-#  pod 'ReachabilitySwift'
+  pod 'ReachabilitySwift'
 #  pod 'SMCloudServices'
   pod 'IQKeyboardManager'
   pod 'SwiftLint'

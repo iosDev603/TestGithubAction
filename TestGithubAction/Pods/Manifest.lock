@@ -117,6 +117,7 @@ PODS:
   - PromisesObjC (2.4.0)
   - PromisesSwift (2.4.0):
     - PromisesObjC (= 2.4.0)
+  - ReachabilitySwift (5.2.4)
   - SkeletonView (1.30.4)
   - Split (3.1.1)
   - SwiftLint (0.58.2)
@@ -128,6 +129,7 @@ DEPENDENCIES:
   - FirebaseAnalytics
   - FirebaseCrashlytics
   - IQKeyboardManager
+  - ReachabilitySwift
   - SkeletonView
   - Split
   - SwiftLint
@@ -154,6 +156,7 @@ SPEC REPOS:
     - ObjectMapper
     - PromisesObjC
     - PromisesSwift
+    - ReachabilitySwift
     - SkeletonView
     - Split
     - SwiftLint
@@ -179,10 +182,11 @@ SPEC CHECKSUMS:
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
+  ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
   SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
   Split: 4ed3b088e46890ac4b8110e4ae7c194ba4a59d6f
   SwiftLint: 365bcd9ffc83d0deb874e833556d82549919d6cd
 
-PODFILE CHECKSUM: a88647184f103b8b21627f53979efdd7edfa714d
+PODFILE CHECKSUM: 74253a62b1a13faedb99448f8d3c291ee4a4d13c
 
 COCOAPODS: 1.16.2
