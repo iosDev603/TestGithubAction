@@ -40,6 +40,9 @@ jobs:
 
       # Build the iOS App
       - name: Build the iOS Simulator app
+        env:
+          # This ensures arm64 is excluded when building for simulator
+          EXCLUDED_ARCHITECTURES: arm64
         run: |
           PROJECT_PATH="/Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction/TestGithubAction.xcworkspace"
           SCHEME="TestGithubAction"
@@ -47,7 +50,7 @@ jobs:
           
           # Step 2: Build the project
           echo "Building the project..."
-          export DEBUG_INFORMATION_FORMAT=DWARF
+          arch -x86_64 pod install
           xcodebuild \
             -workspace "$PROJECT_PATH" \
             -scheme "$SCHEME" \
@@ -56,7 +59,7 @@ jobs:
             -destination 'platform=iOS Simulator,OS=latest,name=iPad (10th generation)' \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            CODE_SIGNING_ALLOWED=NO clean build | tee result.log
+            CODE_SIGNING_ALLOWED=NO ARCHS=x86_64 ONLY_ACTIVE_ARCH=NO clean build | tee result.log
 
             
       # List files to check the build output
