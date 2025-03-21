@@ -36,7 +36,8 @@ jobs:
       - name: Install dependencies
         run: |
           cd /Users/runner/work/TestGithubAction/TestGithubAction/TestGithubAction/
-          pod install --repo-update
+          # pod install --repo-update
+          arch -x86_64 pod install
 
       # Build the iOS App
       - name: Build the iOS Simulator app
@@ -48,7 +49,7 @@ jobs:
           # Step 2: Build the project
           echo "Building the project..."
           
-          xcodebuild \
+          arch -x86_64 xcodebuild \
             -workspace "$PROJECT_PATH" \
             -scheme "$SCHEME" \
             -sdk iphonesimulator \
