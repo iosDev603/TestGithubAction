@@ -25,7 +25,7 @@ def commonframeworks
 #  pod 'SwiftLint'
 #  pod 'SkeletonView'
 #  pod 'BugfenderSDK'
-#  pod 'Split'
+  pod 'Split'
   pod 'FirebaseCrashlytics'
   pod 'FirebaseAnalytics'
 #  pod 'Dynatrace'
