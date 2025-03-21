@@ -5,6 +5,10 @@ This application makes use of the following third party libraries:
 
 See https://bugfender.com/terms-of-service/
 
+## Dynatrace
+
+https://github.com/Dynatrace/dem-license/blob/main/LICENSE.md
+
 ## FirebaseAnalytics
 
 Copyright 2022 Google

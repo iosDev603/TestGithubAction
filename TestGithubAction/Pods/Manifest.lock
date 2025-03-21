@@ -1,5 +1,8 @@
 PODS:
   - BugfenderSDK (2.0.0)
+  - Dynatrace (8.309.2.1015):
+    - Dynatrace/xcframework (= 8.309.2.1015)
+  - Dynatrace/xcframework (8.309.2.1015)
   - FirebaseAnalytics (11.10.0):
     - FirebaseAnalytics/AdIdSupport (= 11.10.0)
     - FirebaseCore (~> 11.10.0)
@@ -112,6 +115,7 @@ PODS:
 
 DEPENDENCIES:
   - BugfenderSDK
+  - Dynatrace
   - FirebaseAnalytics
   - FirebaseCrashlytics
   - Split
@@ -119,6 +123,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - BugfenderSDK
+    - Dynatrace
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseCoreExtension
@@ -137,6 +142,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   BugfenderSDK: 290a6c6163c2212c819e63c49d192c8625046602
+  Dynatrace: 500c61e08b89f71ba7e368e593f4cbb9e09a88d7
   FirebaseAnalytics: 4e42333f02cf78ed93703a5c36f36dd518aebdef
   FirebaseCore: 8344daef5e2661eb004b177488d6f9f0f24251b7
   FirebaseCoreExtension: 6f357679327f3614e995dc7cf3f2d600bdc774ac
@@ -153,6 +159,6 @@ SPEC CHECKSUMS:
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   Split: 4ed3b088e46890ac4b8110e4ae7c194ba4a59d6f
 
-PODFILE CHECKSUM: a16dda8218a2414d42788b0d9b0e11106f50ae6e
+PODFILE CHECKSUM: 2b40cc6671153272415fbf69f17f87bc6849aa2d
 
 COCOAPODS: 1.16.2

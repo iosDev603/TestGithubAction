@@ -28,7 +28,7 @@ def commonframeworks
   pod 'Split'
   pod 'FirebaseCrashlytics'
   pod 'FirebaseAnalytics'
-#  pod 'Dynatrace'
+  pod 'Dynatrace'
 end
 
 target 'TestGithubAction' do
